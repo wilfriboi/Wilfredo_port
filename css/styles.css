@@ -1,7 +1,7 @@
 /* En este archivo escriban su CSS */
 
 /* Fonts */
-/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
 
 
 
@@ -37,20 +37,187 @@ main {
     margin: auto;
 }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
+body {
+font-family: 'lato', sans-serif;
+font-size: 18px;
+background-color: #fbfbfb;
+}
+
+header {
+    display: flex;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    position: fixed;
+    background-color: #fbfbfb;
+    margin: auto;
+
+}
+
+div {
+    font-size: 36px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section_logo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+font-size: 36px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px 10px 10px;
+}
+
+.cv {
+    font-size: 20px;
+    color:#fbfbfb;
+    background-color: #af599e;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 10px;
+    margin: 0px 80px 0px 80px;
+    border-radius: 50px;
+
+}
+
+#acerca h2 {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px 0px 0px;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.section_contacto {
+    color: #0f0f0f    ;
+    background-color: rgba(175, 89, 158, 0.3);
+    background-size: 5px;
+    padding: 10px;
+    margin: 0px 20px 5px 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    border-radius: 15px;
+}
+
+section {
+    min-height: 100vh;
+
+}
+
+art a :hover{
+    color: black;
+}
+
+:root{
+    --ig: #e4405f;
+    --sc: #F26F23;
+    --sp: #1DB954;
+    --yt: #FF0000;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-height: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.redes li {
+    font-size: 70px;
+}
+
+.redes {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes ul li {
+    display: inline-block;
+    margin: auto;
+    width: 700px;
+    height: 150px;
+    text-align: center;
+}
+
+.redes ul li a {
+    display: block;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    line-height: 100px;
+    font-size: 100px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.redes ul:hover a {
+    filter: blur(2px);
+}
+
+.redes ul li a:hover{
+    transform: translateY(-3xp) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes ul li .ig:hover{
+    background: var(--ig);
+}
+
+.redes ul li .sc:hover{
+    background: var(--sc);
+}
+
+.redes ul li .yt:hover{
+    background: var(--yt);
+}
+
+.redes ul li .sp:hover{
+    background: var(--sp);
+}
+
+footer {
+    font-size: 18px;
+    height: 90px;
+    color:#fbfbfb;
+    background-color: #af599e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
